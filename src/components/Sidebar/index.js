@@ -1,15 +1,15 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 const Sidebar = () => (
-        <div className='nav-bar'>
-            <Link className='logo' to='/'>
-                <img src={LogoS} alt='logo'/>
-                <img src={LogoSubtitle} alt='s_logo'/>
-            </Link>
-        </div>
+    <div className= 'nav-bar'>
+        <Link className='logo' to='/'>
+            <img src={LogoS} alt='logo' />
+            <img className='sub-logo' src={LogoSubtitle} alt='apoorv' />
+        </Link>
+    </div>
 )
 
 export default Sidebar
